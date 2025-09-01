@@ -16,7 +16,7 @@ def init_agent():
 
 init_agent()
 
-st.title("💬 Chat con lama-3.3-70b-versatile")
+st.title("💬 Chat con Llama-3.3-70b-versatile")
 st.caption("Powered by Groq Cloud - Llama-3.3-70b-versatile model")
 
 # Mostrar historial
