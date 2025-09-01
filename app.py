@@ -2,7 +2,7 @@ import streamlit as st
 from utils.agent_setup import create_agent
 
 st.set_page_config(
-    page_title="🤖 Agente Llama3-8b",
+    page_title="🤖 Agente Llama-3.3-70b-versatile",
     page_icon="🤖",
     layout="centered",
     initial_sidebar_state="collapsed"
@@ -12,12 +12,12 @@ def init_agent():
     if "agent" not in st.session_state:
         st.session_state.agent = create_agent()
     if "messages" not in st.session_state:
-        st.session_state.messages = [{"role": "assistant", "content": "¡Hola! Soy Llama3-8b, ¿en qué puedo ayudarte?"}]
+        st.session_state.messages = [{"role": "assistant", "content": "¡Hola! Soy Llama-3.3-70b-versatile, ¿en qué puedo ayudarte?"}]
 
 init_agent()
 
-st.title("💬 Chat con Llama3-8b")
-st.caption("Powered by Groq Cloud - llama3-8b-8192 model")
+st.title("💬 Chat con lama-3.3-70b-versatile")
+st.caption("Powered by Groq Cloud - Llama-3.3-70b-versatile model")
 
 # Mostrar historial
 for msg in st.session_state.messages:
